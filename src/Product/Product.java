@@ -1,3 +1,5 @@
+package Product;
+
 import java.util.HashMap;
 
 public class Product {

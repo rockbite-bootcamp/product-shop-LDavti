@@ -1,10 +1,14 @@
+package Shop;
+
+import Product.Product;
+import Product.IInventory;
+
 import java.util.HashMap;
 
 public interface IShop {
 
     /**
      * "Get" method for product in specified category
-     *
      */
     HashMap<Integer, Product> getProducts(ShopCategory category);
 

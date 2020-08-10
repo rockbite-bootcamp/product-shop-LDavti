@@ -1,9 +1,11 @@
+package Product;
+
 public enum ItemLibrary {
 
     CREDIT(new Item("Credit")),
     GEM(new Item("Gem")),
-    LUBE(new Item("Lube")),
-    CHOCOLATE(new Item("Chocolate"));
+    BUILDING(new Item("Building")),
+    DECORATIONS(new Item("Decorations"));
 
     private final Item item;
 

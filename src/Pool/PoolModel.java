@@ -1,10 +1,9 @@
-import pool.Poolable;
+package Pool;
 
 public class PoolModel implements Poolable {
     private int ID;
 
     public PoolModel(int ID) {
-
         this.ID = ID;
     }
 

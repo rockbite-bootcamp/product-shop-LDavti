@@ -1,12 +1,12 @@
-import pool.Poolable;
+package Pool;
 
 import java.util.ArrayList;
 
 public abstract class Pool<T extends Poolable> {
 
-    ArrayList<T> freeObjects = new ArrayList<>();
+   public ArrayList<T> freeObjects = new ArrayList<>();
 
-    ArrayList<T> usedObjects = new ArrayList<>();
+   public ArrayList<T> usedObjects = new ArrayList<>();
 
     protected abstract T newObject();
 

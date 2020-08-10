@@ -1,10 +1,10 @@
-import pool.Poolable;
+import Pool.*;
 
-/**
- * Structure class Command , here generic type T , which is exactly a "placeholder" need to extend Poolable for obtaining "reset" method"
- */
-public class Command<T extends Poolable> implements ICommand {
-    private PoolImplementation<T> pool;
+    /**
+    * Structure class Command , here generic type T , which is exactly a "placeholder" need to extend Poolable for obtaining "reset" method"
+     */
+    public class Command<T extends Poolable> implements ICommand {
+        private PoolImplementation<T> pool;
 
     public Command(PoolImplementation<T> pool) {
         this.pool = pool;

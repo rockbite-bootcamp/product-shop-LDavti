@@ -1,3 +1,5 @@
+package Product;
+
 public interface IInventory {
 
     boolean hasItem(Item item, int count);

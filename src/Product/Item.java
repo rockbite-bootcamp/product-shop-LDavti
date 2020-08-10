@@ -1,3 +1,5 @@
+package Product;
+
 public class Item {
     /**
      * Name of the item

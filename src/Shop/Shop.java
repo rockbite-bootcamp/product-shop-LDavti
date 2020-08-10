@@ -1,3 +1,8 @@
+package Shop;
+
+import Pool.*;
+import Product.*;
+
 import java.util.HashMap;
 
 public class Shop implements IShop, Poolable {
@@ -30,7 +35,6 @@ public class Shop implements IShop, Poolable {
     public Product getProduct(int ID) {
         return productMap.get(ID);
     }
-
 
     /**
      * Provider is proxy between user and shop, but we need to check if user is able to get specified product
@@ -71,8 +75,7 @@ public class Shop implements IShop, Poolable {
                     inventoryProvider.addItem(item, count);
                 }
 
-                System.out.println("transaction complete for product: " + product.getProductName());
-                System.out.println(new StringBuilder("transaction complete for product: "));
+                System.out.println(new StringBuilder("transaction complete for product: ").append(product.getProductName()));
                 return true;
             }
         }

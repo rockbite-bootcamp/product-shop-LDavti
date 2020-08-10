@@ -1,3 +1,4 @@
+package Shop;
 
 public enum ShopCategory {
     CUSTOM,

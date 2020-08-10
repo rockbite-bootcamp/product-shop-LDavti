@@ -1,3 +1,6 @@
+import Product.IInventory;
+import Product.Item;
+
 import java.util.HashMap;
 
 public class User implements IInventory {

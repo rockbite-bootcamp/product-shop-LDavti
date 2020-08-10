@@ -1,4 +1,4 @@
-import pool.Poolable;
+package Pool;
 
 public class PoolImplementation<T extends Poolable> extends Pool<T> {
 
